@@ -6,15 +6,16 @@ debounceTime implementation for flyd streams. Similar to [flyd-aftersilence](htt
 ## Usage
 ```javascript
 var stream$ = flyd.stream()
-var once$ = once(stream$)
-var result = []
-flyd.on(function (val) {
-  result.push(val)
-}, once$)
+var debounce$ = debounceTime(500, stream$)
 
 stream$(1)
+assert.deepEqual(debounce$(), undefined)
 stream$(2)
+stream$(3)
+assert.deepEqual(debounce$(), undefined)
 
-assert.deepEqual(result.length, 1)
-assert.deepEqual(result, [1])
+setTimeout(function () {
+  assert.deepEqual(debounce$(), 3)
+  done()
+}, 550)
 ```
