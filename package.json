@@ -1,0 +1,33 @@
+{
+  "name": "flyd-debouncetime",
+  "version": "0.0.1",
+  "description": "Once combined stream for flyd",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bertofer/flyd-debounceTime.git"
+  },
+  "keywords": [
+    "flyd",
+    "streams",
+    "debounce",
+    "debounceTime",
+    "combine"
+  ],
+  "author": "Alberto Fernandez (Bertofer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bertofer/flyd-debounceTime/issues"
+  },
+  "homepage": "https://github.com/bertofer/flyd-debounceTime#readme",
+  "dependencies": {
+    "flyd": "^0.2.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.2.0"
+  }
+}
