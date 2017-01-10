@@ -1,7 +1,7 @@
 {
   "name": "flyd-debouncetime",
-  "version": "0.0.1",
-  "description": "Once combined stream for flyd",
+  "version": "0.0.2",
+  "description": "debounceTime implementation for flyd streams",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/index.js"
