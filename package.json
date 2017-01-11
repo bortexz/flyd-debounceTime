@@ -1,6 +1,6 @@
 {
   "name": "flyd-debouncetime",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "debounceTime implementation for flyd streams",
   "main": "index.js",
   "scripts": {
