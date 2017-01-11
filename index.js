@@ -6,7 +6,7 @@ module.exports = flyd.curryN(2, function (time, source$) {
     if (timeout) {
       clearTimeout(timeout)
     }
-    setTimeout(function () {
+    timeout = setTimeout(function () {
       self(s$())
     }, time)
   }, [source$])
